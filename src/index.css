@@ -1,13 +1,58 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Tomorrow:wght@100;300&display=swap');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: crimson;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.clock {
+  padding: 40px 50px;
+  font-family: 'Tomorrow', sans-serif;
+  border: 2px solid;
+
+  font-weight: 100;
+  letter-spacing: 8px;
+}
+
+.text h1 {
+  font-family: 'Tomorrow', sans-serif;
+  padding-bottom: 20px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  padding-top: 50px;
+  padding: 50px 10px 0 10px;
+}
+.btn {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  background: none;
+  border: 1px solid crimson;
+  color: crimson;
+  padding: 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+button:hover {
+  background: crimson;
+  color: rgb(255, 250, 209);
+  transition: 0.3s;
 }
